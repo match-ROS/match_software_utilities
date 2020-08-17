@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+<script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+<script type="text/javascript" type="text/javascript">
+  // Connecting to ROS
+  // -----------------
+
+  var ros = new ROSLIB.Ros({
+    url : 'ws://192.168.12.20:9090'
+  });
+
+  ros.on('connection', function() {
+    console.log('Connected to websocket server.');
+  });
+
+  ros.on('error', function(error) {
+    console.log('Error connecting to websocket server: ', error);
+  });
+
+  ros.on('close', function() {
+    console.log('Connection to websocket server closed.');
+  });
+
+
+  ros.getTopics(function(topics) {
+    console.log(topics);
+    listTopics= topics["topics"]
+    listTypes= topics["types"]
+    var table = document.getElementById("myTable");
+
+    for (i = 0; i< listTopics.length; i++) {
+      var row = table.insertRow(0);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = listTypes[i];
+      cell2.innerHTML = listTopics[i]; 
+    }     
+});
+</script>
+
+
+</head>
+<body>
+  <h1>Rosbridge Metadata</h1>
+  <table id="myTable" stype="width:100%">
+  </table>
+</body>
+</html>
+
