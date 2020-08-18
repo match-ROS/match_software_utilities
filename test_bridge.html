@@ -31,7 +31,7 @@
     console.log(topics);
     listTopics= topics["topics"]
     listTypes= topics["types"]
-    var table = document.getElementById("myTable");
+    var table = document.getElementById("myTopics");
 
     for (i = 0; i< listTopics.length; i++) {
       var row = table.insertRow(0);
@@ -40,15 +40,37 @@
       cell1.innerHTML = listTypes[i];
       cell2.innerHTML = listTopics[i]; 
     }     
+  });
+ros.getParams(function(params) {
+    var list = document.getElementById("myParams");
+    console.log(params);
+    for(i=0;i<params.length;i++)
+    {
+      var elem=document.createElement("li");
+      elem.innerHTML=params[i];
+      list.appendChild(elem);
+    }
+  });
+
+var tfClient = new ROSLIB.TFClient({
+    ros : ros,
+    fixedFrame : 'map',
+    angularThres : 0.01,
+    transThres : 0.01
 });
+tfClient.subscribe('odom', function(tf) {
+    console.log(tf);
+  });
+
+
 </script>
 
 
 </head>
 <body>
   <h1>Rosbridge Metadata</h1>
-  <table id="myTable" stype="width:100%">
-  </table>
+  <table id="myTopics" stype="width:100%"> </table>
+  <ul id="myParams"></table>
 </body>
 </html>
 
