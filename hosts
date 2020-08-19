@@ -1,0 +1,18 @@
+127.0.0.1	localhost
+127.0.1.1	rosmatch-Blade-15-Mid-2019-Base
+192.168.12.90	ur
+192.168.12.91	panda
+10.110.130.6	mur_lan	#lan
+10.110.130.67	mur	#w-lan
+10.110.130.66	miranda	#w-lan
+10.110.130.7	rosmaster
+10.110.130.73	imes-msi
+
+
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
