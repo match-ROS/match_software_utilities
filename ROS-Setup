@@ -9,6 +9,10 @@ sudo apt-get update -y
 sudo apt-get install terminator -y
 sudo apt-get install code -y
 sudo apt-get install hardinfo -y
+sudo apt-get install wget
+wget https://raw.githubusercontent.com/pimlie/ubuntu-mainline-kernel.sh/master/ubuntu-mainline-kernel.sh
+chmod +x ubuntu-mainline-kernel.sh
+sudo mv ubuntu-mainline-kernel.sh /usr/local/bin/
 
 # ROS Melodic
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
