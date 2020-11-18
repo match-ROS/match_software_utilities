@@ -21,6 +21,8 @@ sudo apt update
 sudo apt install ros-melodic-desktop-full -y
 sudo apt install ros-melodic-mir -y
 sudo apt install ros-melodic-slam-navigation -y
+sudo apt install ros-melodic-mir-robot -y
+sudo apt install ros-melodic-navigation -y
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential -y
