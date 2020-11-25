@@ -10,6 +10,7 @@ sudo apt-get install terminator -y
 sudo apt-get install code -y
 sudo apt-get install hardinfo -y
 sudo apt-get install wget
+sudo apt-get install openssh-server
 wget https://raw.githubusercontent.com/pimlie/ubuntu-mainline-kernel.sh/master/ubuntu-mainline-kernel.sh
 chmod +x ubuntu-mainline-kernel.sh
 sudo mv ubuntu-mainline-kernel.sh /usr/local/bin/
@@ -36,3 +37,6 @@ source ~/catkin_ws/devel/setup.bash
 catkin_make
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo "sftp://mur/home/rosmatch mur" >> ~/.config/gtk-3.0/bookmarks
+echo "sftp://miranda/home/rosmatch miranda" >> ~/.config/gtk-3.0/bookmarks
+echo "sftp://rosmaster/home/rosmatch rosmaster" >> ~/.config/gtk-3.0/bookmarks
