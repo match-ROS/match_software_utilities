@@ -37,6 +37,3 @@ source ~/catkin_ws/devel/setup.bash
 catkin_make
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-echo "sftp://mur/home/rosmatch mur" >> ~/.config/gtk-3.0/bookmarks
-echo "sftp://miranda/home/rosmatch miranda" >> ~/.config/gtk-3.0/bookmarks
-echo "sftp://rosmaster/home/rosmatch rosmaster" >> ~/.config/gtk-3.0/bookmarks
