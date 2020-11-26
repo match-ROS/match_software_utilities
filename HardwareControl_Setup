@@ -3,5 +3,4 @@ echo "sftp://miranda/home/rosmatch miranda" >> ~/.config/gtk-3.0/bookmarks
 echo "sftp://rosmaster/home/rosmatch rosmaster" >> ~/.config/gtk-3.0/bookmarks
 echo "export ROS_MASTER_URI=http://rosmaster:11311" >> ~/.bashrc
 
-sudo dpkg -i linux-headers-5.9.1-rt20_5.9.1-rt20-1_amd64.deb linux-image-5.9.1-rt20_5.9.1-rt20-1_amd64.deb 
 
