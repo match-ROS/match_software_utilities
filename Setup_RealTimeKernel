@@ -1,3 +1,3 @@
-wget https://seafile.cloud.uni-hannover.de/f/371bf27672d3479d9339/?dl=1
-wget https://seafile.cloud.uni-hannover.de/f/e2d98a64214a46419c07/?dl=1
+wget https://seafile.cloud.uni-hannover.de/f/371bf27672d3479d9339/?dl=1 -O linux-headers-5.9.1-rt20_5.9.1-rt20-1_amd64.deb
+wget https://seafile.cloud.uni-hannover.de/f/e2d98a64214a46419c07/?dl=1 -O linux-image-5.9.1-rt20_5.9.1-rt20-1_amd64.deb
 sudo dpkg -i linux-headers-5.9.1-rt20_5.9.1-rt20-1_amd64.deb linux-image-5.9.1-rt20_5.9.1-rt20-1_amd64.deb 
