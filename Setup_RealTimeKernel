@@ -1,0 +1,2 @@
+
+sudo dpkg -i linux-headers-5.9.1-rt20_5.9.1-rt20-1_amd64.deb linux-image-5.9.1-rt20_5.9.1-rt20-1_amd64.deb 
