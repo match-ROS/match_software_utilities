@@ -1,49 +1,44 @@
-% P1 = [];
-% P2 = [];
-% P3 = [];
-% P4 = [];
-% P5 = [];
-% P6 = [];
+%% Kubischer Spline durch Punkte
+% Die Vorgabe der Punkte erfolgt über "/clicked_pose" in rviz
 
-Center = [24.72 12.51];
+%% config
+v_max = 0.5; % Maximalgeschwindigkeit in m/sek 
+freq = 100; % Frequenz der Interpolation - muss mit ROS Einstellungen übereinsstimmen
 
-P1 = Center + [-2.9 1.37];
-P2 = Center + [-0.9 1.4];
-P3 = Center + [1.31 1.37];
-P4 = Center + [3.6 0.58];
-P5 = Center + [2.68 -0.6];
-P6 = Center + [0.19 -1.2];
+%% Main
 
-T = [0;1;2;3;4;5];
+T = 1:length(x_pose);
 
-t = 0:0.001:5;
+t = 0:0.001:T(end);
 
-x = [P1(1);P2(1);P3(1);P4(1);P5(1);P6(1)];
-y = [P1(2);P2(2);P3(2);P4(2);P5(2);P6(2)];
-
-p = 0.0009;
-
-values = csaps(T,x,p,t);
-tx = csaps(T,x);
-ty = csaps(T,y);
+tx = csaps(T,x_pose);
+ty = csaps(T,y_pose);
 
 xx = ppval(tx,t);
 yy = ppval(ty,t);
 
+v = (sqrt(diff(xx).^2+diff(yy).^2));  
+s_ges = sum(v);  % Gesamtlänge der Strecke
+t_ges = s_ges / v_max;
 
+%% Interpolation auf Zielgeschwindigkeit anpassen
+t_new = 1:(T(end)-1)/(t_ges*freq):T(end);
 
-%fnplt(ty)
+xx = ppval(tx,t_new);
+yy = ppval(ty,t_new);
+
 hold all
-%plot(t,yy)
-plot(x,y)
+plot(x_pose,y_pose,'o')
 plot(xx,yy)
-%plot(0,P1(1),'o')
+
+
+%% 
+phi = [];
 
 for i = 1:length(xx)-1
     phi(i) = atan2(yy(i+1)-yy(i),xx(i+1)-xx(i));
 end
 phi = [phi(1),phi];
-%plot(diff(phi))
 
 M = [xx;yy;phi;[0,diff(xx)];[0,diff(yy)];[0,diff(phi)]];
 
