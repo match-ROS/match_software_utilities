@@ -7,7 +7,7 @@ sudo apt install net-tools -y
 sudo add-apt-repository ppa:gnome-terminator
 sudo apt-get update -y
 sudo apt-get install terminator -y
-sudo apt-get install code -y
+sudo snap install --classic code -y
 sudo apt-get install hardinfo -y
 sudo apt-get install wget
 sudo apt-get install openssh-server
@@ -33,7 +33,6 @@ rosdep update
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 source ~/.bashrc
-source ~/catkin_ws/devel/setup.bash
 catkin_make
-
+source ~/catkin_ws/devel/setup.bash
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
