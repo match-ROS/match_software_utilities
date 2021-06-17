@@ -9,6 +9,7 @@ sudo apt-get update -y
 sudo apt-get install terminator -y
 sudo snap install --classic code -y
 sudo apt-get install hardinfo -y
+sudo apt-get install python-catkin-tools -y
 sudo apt-get install wget
 sudo apt-get install openssh-server
 wget https://raw.githubusercontent.com/pimlie/ubuntu-mainline-kernel.sh/master/ubuntu-mainline-kernel.sh
