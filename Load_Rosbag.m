@@ -33,9 +33,15 @@ for i = 1:height(bag.AvailableTopics(:,1))
     elseif length(k) == 4
         fieldname = structname{end};
         raw.(structname{2}).(structname{3}).(structname{4}).(fieldname) = readMessages(bSel,'DataFormat','struct'); 
+    elseif length(k) == 5
+        fieldname = structname{end};
+        raw.(structname{2}).(structname{3}).(structname{4}).(structname{5}).(fieldname) = readMessages(bSel,'DataFormat','struct'); 
+    elseif length(k) > 5
+        error("Topic name contains too many slashes")
     end
 
 end
 
+clear i idx k structname chars fieldname name T
 
 
