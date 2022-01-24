@@ -16,7 +16,11 @@ sudo apt install nvidia-driver-470  # or nvidia-driver-495
 ssh-keygen -t rsa
 ```
 2. At SSH Server (this only needs to be done once for every server)
-``` ssh b@B mkdir -p .ssh ```
+``` 
+ssh b@B mkdir -p .ssh 
+```
 
 3. At SSH client
-``` cat .ssh/id_rsa.pub | ssh mur 'cat >> .ssh/authorized_keys'```
+``` 
+cat .ssh/id_rsa.pub | ssh mur 'cat >> .ssh/authorized_keys'
+```
