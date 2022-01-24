@@ -17,7 +17,7 @@ ssh-keygen -t rsa
 ```
 2. At SSH Server (this only needs to be done once for every server)
 ``` 
-ssh b@B mkdir -p .ssh 
+mkdir -p .ssh 
 ```
 
 3. At SSH client
