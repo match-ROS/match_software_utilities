@@ -24,3 +24,8 @@ mkdir -p .ssh
 ``` 
 cat .ssh/id_rsa.pub | ssh mur 'cat >> .ssh/authorized_keys'
 ```
+#More info for console outputs
+Execute this in the console or add it to the .bashrc:
+```
+export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${message}'
+```
