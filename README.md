@@ -43,5 +43,8 @@ export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${messa
 | MuR_SPS  | 10.145.8.22  |
 | Spot_SPS  | 10.145.8.23  |
 | mobile_master_SPS  | 10.145.8.24  |
+| master_ethernet  | 10.145.8.30  |
 | MiRanda_USB_ethernet  | 10.145.8.31  |
+| mobile_master_ethernet  | 10.145.8.32  |
+| MuR_ethernet  | 10.145.8.33  |
 
