@@ -34,5 +34,6 @@ export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${messa
 
 | Device  | Static IP |
 | ------------- | ------------- |
-| Rocket M5  |    10.145.8.2 |
-| Content Cell  | Content Cell  |
+| Rocket M5  |    10.145.8.10 |
+| MuR_AirLan  | 10.145.8.11  |
+| MiRanda_AirLan  | 10.145.8.12  |
