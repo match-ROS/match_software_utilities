@@ -37,3 +37,10 @@ export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${messa
 | Rocket M5  |    10.145.8.10 |
 | MuR_AirLan  | 10.145.8.11  |
 | MiRanda_AirLan  | 10.145.8.12  |
+| master_SPS  | 10.145.8.20  |
+| MiRanda_SPS  | 10.145.8.21  |
+| MuR_SPS  | 10.145.8.22  |
+| Spot_SPS  | 10.145.8.23  |
+| mobile_master_SPS  | 10.145.8.24  |
+| MiRanda_USB_ethernet  | 10.145.8.31  |
+
