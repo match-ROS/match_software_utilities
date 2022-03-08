@@ -47,4 +47,5 @@ export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${messa
 | MiRanda_USB_ethernet  | 10.145.8.31  |
 | mobile_master_ethernet  | 10.145.8.32  |
 | MuR_ethernet  | 10.145.8.33  |
+| mir200_robot_controller  | 10.145.8.34  |
 
