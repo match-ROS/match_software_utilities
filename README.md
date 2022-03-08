@@ -29,3 +29,10 @@ Execute this in the console or add it to the .bashrc:
 ```
 export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${message}'
 ```
+
+# IPs
+
+| Device  | Static IP |
+| ------------- | ------------- |
+| Rocket M5  |   | 10.145.8.2 |
+| Content Cell  | Content Cell  |
