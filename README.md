@@ -50,4 +50,5 @@ export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${messa
 | mir200_robot_controller  | 10.145.8.34  |
 | mir100_robot_controller  | 10.145.8.35  |
 | spot_AirLan  | 10.145.8.36  |
+| keyence_controller  | 10.145.8.37  |
 
