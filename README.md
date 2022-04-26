@@ -9,7 +9,7 @@ sudo apt update
 sudo apt install nvidia-driver-470  # or nvidia-driver-495
 ```
 
-#SSH
+# SSH
 
 1. At SSH Client (do not type anything - just press enter):
  ```
@@ -29,6 +29,12 @@ Execute this in the console or add it to the .bashrc:
 ```
 export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${message}'
 ```
+
+# Other
+#failed-to-fetch-binary-armhf-packages-error-
+sudo dpkg --remove-architecture armhf
+
+
 
 # IPs
 
