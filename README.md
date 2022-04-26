@@ -31,8 +31,8 @@ export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${messa
 ```
 
 # Other
-#failed-to-fetch-binary-armhf-packages-error-
-sudo dpkg --remove-architecture armhf
+failed-to-fetch-binary-armhf-packages-error-
+```sudo dpkg --remove-architecture armhf```
 
 
 
