@@ -1,0 +1,9 @@
+<library path="lib/libexample_controller_plugin">
+  <class name="example_controller/ExampleController"
+         type="example_controller_ns::ExampleController"
+         base_class_type="controller_interface::ControllerBase" >
+    <description>
+      This controller is just an example.
+    </description>
+  </class>
+</library>

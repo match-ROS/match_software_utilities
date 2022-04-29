@@ -1,0 +1,4 @@
+example_controller:
+  type: example_controller/ExampleController
+  
+  # Add additional parameters after this comment that the controller than can get through the param server

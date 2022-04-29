@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="example_controller">
+    <!-- One line is needed to spawn a robot/ load the urdf-->
+    <link name="base_footprint" />
+
+    <!-- Controller manager that is loading the control plugins spawned by the controller spawner-->
+	<gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        </plugin>
+    </gazebo>
+</robot>

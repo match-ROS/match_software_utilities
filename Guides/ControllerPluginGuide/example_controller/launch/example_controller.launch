@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<launch>
+    <param name="robot_description" command="$(find xacro)/xacro $(find example_controller)/urdf/example_controller_test.urdf"/>
+
+	<!-- Spawn the example controller urdf into Gazebo -->
+	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model $example_controller_name"/>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+	<rosparam file="$(find example_controller)/config/example_controller.yaml" command="load"/>
+
+	<node name="example_controller_spawner" pkg="controller_manager" respawn="false" type="spawner" output="screen"   
+		args="example_controller">
+	</node>
+</launch>
