@@ -47,6 +47,7 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | MuR_AirLan  | 10.145.8.11  |
 | MiRanda_AirLan  | 10.145.8.12  |
 | stereo_AirLan  | 10.145.8.13  |
+| agilex_AirLan  | 10.145.8.14  |
 | master_SPS  | 10.145.8.20  |
 | MiRanda_SPS  | 10.145.8.21  |
 | MuR_SPS  | 10.145.8.22  |
