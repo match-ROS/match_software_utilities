@@ -58,4 +58,6 @@ failed-to-fetch-binary-armhf-packages-error-
 | mir100_robot_controller  | 10.145.8.35  |
 | spot_AirLan  | 10.145.8.36  |
 | keyence_controller  | 10.145.8.37  |
-
+| spot_ethernet  | 10.145.8.38  |
+| keyence_pc_ethernet  | 10.145.8.39  |
+| agilex_pc_ethernet  | 10.145.8.40  |
