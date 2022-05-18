@@ -66,8 +66,8 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | agilex_pc_ethernet  | 10.145.8.40  |
 
 
-
-## route via Miranda-PC with iptables
+# IP routing
+## route throught Miranda-PC with iptables
 ### Example
 panda: 192.168.13.90, client: 10.145.8.250:
 ```
