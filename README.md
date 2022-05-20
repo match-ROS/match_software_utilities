@@ -64,6 +64,7 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | spot_ethernet  | 10.145.8.38  |
 | keyence_pc_ethernet  | 10.145.8.39  |
 | agilex_pc_ethernet  | 10.145.8.40  |
+| agilex2_pc_ethernet  | 10.145.8.41  |
 
 
 # IP routing
