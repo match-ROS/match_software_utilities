@@ -2,13 +2,6 @@
 Usefull Scripts for working with the match mobile robots.
 # Nvidia Graphics for Ubuntu:
 
-```
-sudo add-apt-repository ppa:graphics-drivers/ppa --yes
-sudo apt update
-
-sudo apt install nvidia-driver-470  # or nvidia-driver-495
-```
-
 # SSH
 
 1. At SSH Client (do not type anything - just press enter):
