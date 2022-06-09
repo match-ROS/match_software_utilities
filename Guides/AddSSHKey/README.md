@@ -11,5 +11,5 @@ mkdir -p .ssh
 
 3. At SSH client
 ``` 
-cat .ssh/id_rsa.pub | ssh mur 'cat >> .ssh/authorized_keys'
+cat .ssh/id_rsa.pub | ssh SSH_SERVER_NAME 'cat >> .ssh/authorized_keys'
 ```
