@@ -31,18 +31,18 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | MuR_SPS  | 10.145.8.22  |
 | Spot_SPS  | 10.145.8.23  |
 | mobile_master_SPS  | 10.145.8.24  |
-| master_ethernet  | 10.145.8.30  |
-| MiRanda_USB_ethernet  | 10.145.8.31  |
-| mobile_master_ethernet  | 10.145.8.32  |
+| master  | 10.145.8.30  |
+| MiRanda_USB  | 10.145.8.31  |
+| mobile_master  | 10.145.8.32  |
 | MuR_ethernet  | 10.145.8.33  |
 | mir200_robot_controller  | 10.145.8.34  |
 | mir100_robot_controller  | 10.145.8.35  |
 | spot_AirLan  | 10.145.8.36  |
 | keyence_controller  | 10.145.8.37  |
-| spot_ethernet  | 10.145.8.38  |
-| keyence_pc_ethernet  | 10.145.8.39  |
-| agilex_pc_ethernet  | 10.145.8.40  |
-| agilex2_pc_ethernet  | 10.145.8.41  |
-| rosmaster2_ethernet  | 10.145.8.42  |
+| spot | 10.145.8.38  |
+| keyence_pc  | 10.145.8.39  |
+| agilex_pc  | 10.145.8.40  |
+| agilex2_pc  | 10.145.8.41  |
+| rosmaster2  | 10.145.8.42  |
 
 
