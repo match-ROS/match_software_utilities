@@ -1,2 +1,2 @@
-# This folder contains a list of helpfull guides
+# This folder contains a list of helpful guides
 
