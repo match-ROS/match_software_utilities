@@ -1,6 +1,5 @@
 # Utilities
 Usefull Scripts for working with the match mobile robots.
-# Nvidia Graphics for Ubuntu:
 
 # SSH
 
