@@ -43,6 +43,6 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | keyence_pc_ethernet  | 10.145.8.39  |
 | agilex_pc_ethernet  | 10.145.8.40  |
 | agilex2_pc_ethernet  | 10.145.8.41  |
-
+| rosmaster2_ethernet  | 10.145.8.42  |
 
 
