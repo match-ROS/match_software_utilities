@@ -40,7 +40,7 @@ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 echo "export GAZEBO_MODEL_PATH=/usr/share/gazebo-9"  >> ~/.bashrc
 source ~/.bashrc
 #sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential -y
-#sudo apt install python-rosdep -y
+sudo apt install python3-rosdep -y
 sudo apt install python3-catkin-tools python3-osrf-pycommon
 sudo rosdep init
 rosdep update
