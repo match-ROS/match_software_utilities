@@ -13,7 +13,7 @@ failed-to-fetch-binary-armhf-packages-error-
 ```sudo dpkg --remove-architecture armhf```
 
 # sync time over ssh
-ssh user@server sudo date -s @`( date -u +"%s" )`
+ssh user@server sudo date -s @`( date -u +"%s.%N")`
 
 
 # IPs
