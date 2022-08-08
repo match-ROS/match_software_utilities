@@ -11,8 +11,8 @@ export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${messa
 # Other
 failed-to-fetch-binary-armhf-packages-error-
 ```sudo dpkg --remove-architecture armhf```
-
-
+ 
+https://gist.github.com/pantor/9786c41c03a97bca7a52aa0a72fa9387
 
 # IPs
 scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
