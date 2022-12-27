@@ -46,5 +46,7 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | rosmaster2  | 10.145.8.42  |
 | UR16e  | 10.145.8.43 |
 | mir600a_robot_controller | 10.145.8.44 |
+| mir600a_AirLan_receiver | 10.145.8.45 |
+| mir600a_AirLan_transmitter | 10.145.8.46 |
 
 
