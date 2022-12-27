@@ -44,5 +44,7 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | agilex_pc  | 10.145.8.40  |
 | agilex2_pc  | 10.145.8.41  |
 | rosmaster2  | 10.145.8.42  |
+| UR16e  | 10.145.8.43 |
+| MuR620_A | 10.145.8.44 |
 
 
