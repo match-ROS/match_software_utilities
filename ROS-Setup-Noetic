@@ -53,3 +53,7 @@ source /opt/ros/noetic/setup.bash
 catkin build
 source ~/catkin_ws/devel/setup.bash
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+cp .startup_shell_text.sh ./
+cp .font.txt ./
+
+echo "./.startup_shell_text.sh" >> ~/.bashrc
