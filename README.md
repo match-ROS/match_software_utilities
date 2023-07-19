@@ -53,4 +53,44 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | mir600c_robot_controller | 10.145.8.48 |
 | roscore | 10.145.8.50 |
 
+# Mir PC
+## SSH Access
+i.e. for timesync of MiR with chrony
+1. Boot with Linux Live-USB (connect Display and Keyboard to PC)
+2. Mount filesystem for later use with chroot:
+```
+sudo mkdir -p /media/mir
+sudo mount /media/mir/ /dev/sda3
+sudo mount --bind /dev/ /media/mir/@/dev
+sudo mount --bind /run/ /media/mir/@/run
+```
+3. Chroot into system
+```
+sudo chroot /media/mir/@/
+```
 
+4. Create User for later access via ssh:
+```
+adduser rosmatch
+usermod -aG sudo rosmatch
+```
+
+## Install Chrony via SSH or created login
+```
+sudo apt install chrony
+
+# if not installable (to fix broken dependencies):
+sudo apt -f install
+sudo apt install chrony
+```
+
+### Configure Chrony:
+add server 10.145.8.50 to config:
+```
+echo "server 10.145.8.50 #roscore" | sudo tee -a /etc/crony/crony.conf
+
+sudo systemctl restart chrony
+
+# check if new server is on top:
+chronyd sources
+```
