@@ -4,6 +4,9 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 # Essentials
+cp .startup_shell_text.sh ~/
+cp .font.txt ~/
+sudo chmod +x ~/.startup_shell_text.sh
 sudo apt install net-tools -y
 #sudo add-apt-repository ppa:gnome-terminator
 sudo apt-get install terminator -y
@@ -53,7 +56,5 @@ source /opt/ros/noetic/setup.bash
 catkin build
 source ~/catkin_ws/devel/setup.bash
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-cp .startup_shell_text.sh ./
-cp .font.txt ./
 
 echo "./.startup_shell_text.sh" >> ~/.bashrc
