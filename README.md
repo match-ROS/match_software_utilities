@@ -94,3 +94,14 @@ sudo systemctl restart chrony
 # check if new server is on top:
 chronyd sources
 ```
+
+# Testing with Github
+To test your ros package with github you have to use *rostest*. For testing in a workflow with github, the [Industrial CI](https://github.com/ros-industrial/industrial_ci.git) package can be used.
+
+## Test package
+Create test scripts with *rostest* and different *TestCase*. An example can be found [here](https://github.com/pumablattlaus/test_packages_tutorial)
+
+## Workflow in Github
+With the *Industrial CI* package it is possible to check whether the package can be build in the specified ROS-Version and if the specified test cases are successful.
+For using the package, a yml-file is created in .github/workflows/ .
+Depending on this file, the workflow can be started manually, at push or merge of a branch.
