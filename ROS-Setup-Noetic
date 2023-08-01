@@ -57,4 +57,4 @@ catkin build
 source ~/catkin_ws/devel/setup.bash
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
-echo "./.startup_shell_text.sh" >> ~/.bashrc
+echo "~/.startup_shell_text.sh" >> ~/.bashrc
