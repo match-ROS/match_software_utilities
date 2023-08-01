@@ -2,7 +2,7 @@
 
 cat ~/.font.txt
 
-if [ $( rosnode list ) ]
+if [[ $( rosnode list ) ]]
 then
 	printf "\033[92mRoscore is working ;) \033[0m\n\r"
 else
