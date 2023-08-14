@@ -42,7 +42,7 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | spot | 10.145.8.38  |
 | keyence_pc  | 10.145.8.39  |
 | agilex_pc  | 10.145.8.40  |
-| agilex2_pc  | 10.145.8.41  |
+| (agilex2_pc  | 10.145.8.41)  |
 | rosmaster2  | 10.145.8.42  |
 | UR16e  | 10.145.8.43 |
 | mir600a_robot_controller | 10.145.8.44 |
@@ -52,6 +52,8 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | mir600a_robot_controller | 10.145.8.xx |
 | mir600b_robot_controller | 10.145.8.49 |
 | mir600c_robot_controller | 10.145.8.48 |
+| mur620c | 10.145.8.41 |
+| mur620b | 10.145.8.54 |
 | roscore | 10.145.8.50 |
 
 # Mir PC
