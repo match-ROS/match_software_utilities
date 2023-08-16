@@ -90,12 +90,12 @@ sudo apt install chrony
 ### Configure Chrony:
 add server 10.145.8.50 to config:
 ```
-echo "server 10.145.8.50 #roscore" | sudo tee -a /etc/crony/crony.conf
+echo "server 10.145.8.50" | sudo tee -a /etc/chrony/chrony.conf
 
 sudo systemctl restart chrony
 
 # check if new server is on top:
-chronyd sources
+chronyc sources
 ```
 
 # Testing with Github
