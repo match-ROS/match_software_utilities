@@ -45,15 +45,16 @@ scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
 | (agilex2_pc  | 10.145.8.41)  |
 | rosmaster2  | 10.145.8.42  |
 | UR16e  | 10.145.8.43 |
-| mir600a_robot_controller | 10.145.8.44 |
-| mir600a_AirLan_receiver | 10.145.8.45 |
+| mir600a_AirLan_receiver | 10.145.8.58 |
+| mir600a_AirLan_transmitter | 10.145.8.59 |
 | mir600b_AirLan_transmitter | 10.145.8.46 |
 | mir600b_AirLan_receiver | 10.145.8.47 |
 | mir600a_robot_controller | 10.145.8.56 |
 | mir600b_robot_controller | 10.145.8.49 |
 | mir600c_robot_controller | 10.145.8.48 |
-| mur620c | 10.145.8.41 |
+| mur620a | 10.145.8.57 |
 | mur620b | 10.145.8.54 |
+| mur620c | 10.145.8.41 |
 | roscore | 10.145.8.50 |
 
 # Mir PC
