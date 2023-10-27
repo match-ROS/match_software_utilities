@@ -1,7 +1,5 @@
-%% load bag
+function data_unformatted = load_rosbag(bag)
 
-filename = '0_5.bag';
-bag = rosbag(filename);
 
 %% open bag
 
@@ -55,5 +53,6 @@ for i = 1:height(bag.AvailableTopics(:,1))
         error("Topic name contains too many slashes")
     end
 
+end
 end
 
