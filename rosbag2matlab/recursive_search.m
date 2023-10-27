@@ -11,6 +11,7 @@ function structPaths = recursive_search(s, parentName)
         if isfield(s, 'MessageType')
             % If it does, store the name of the struct
             structPaths{end+1} = parentName;
+            return
         end
 
         % Recursively search the sub-structs

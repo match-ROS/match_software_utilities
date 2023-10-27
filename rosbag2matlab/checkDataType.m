@@ -21,6 +21,12 @@ function data_cell_structured = checkDataType(data)
             data_cell_structured = geometry_msgs_Twist(data);
         end
         
+        if data_type == "nav_msgs/Odometry"
+            data_cell_structured = nav_msgs_Odometry(data);
+        end
+        
+        
+        
     end
 end
 
