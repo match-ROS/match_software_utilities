@@ -25,7 +25,9 @@ function data_cell_structured = checkDataType(data)
             data_cell_structured = nav_msgs_Odometry(data);
         end
         
-        
+        if data_type == "tf2_msgs/TFMessage"
+            data_cell_structured = tf2_msgs_TFMessage(data);
+        end 
         
     end
 end

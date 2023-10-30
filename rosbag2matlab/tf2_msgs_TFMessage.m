@@ -1,0 +1,42 @@
+function structured_data = tf2_msgs_TFMessage(data_struct)
+
+structured_data = [];
+
+for i = 1:length(data_struct)
+                
+        for j = 1:length(length(data_struct(i).Transforms))
+            raw_frame_id =  data_struct(i).Transforms(j).ChildFrameId;
+            
+            % remove leading slashes
+            raw_frame_id(raw_frame_id == '/') = [];
+
+            frame_id = strrep(raw_frame_id, '/', '_');
+            
+            if isfield(structured_data,frame_id)
+                structured_data.(frame_id).transform.translation.x(end +1) = data_struct(i).Transforms(j).Transform.Translation.X;
+                structured_data.(frame_id).transform.translation.y(end +1) = data_struct(i).Transforms(j).Transform.Translation.Y;
+                structured_data.(frame_id).transform.translation.z(end +1) = data_struct(i).Transforms(j).Transform.Translation.Z;
+                
+                structured_data.(frame_id).transform.rotation.x(end +1) = data_struct(i).Transforms(j).Transform.Rotation.X;
+                structured_data.(frame_id).transform.rotation.x(end +1) = data_struct(i).Transforms(j).Transform.Rotation.X;
+                structured_data.(frame_id).transform.rotation.x(end +1) = data_struct(i).Transforms(j).Transform.Rotation.X;
+                structured_data.(frame_id).transform.rotation.x(end +1) = data_struct(i).Transforms(j).Transform.Rotation.X;
+                
+            else
+                structured_data.(frame_id).transform.translation.x(1) = data_struct(i).Transforms(j).Transform.Translation.X;
+                structured_data.(frame_id).transform.translation.y(1) = data_struct(i).Transforms(j).Transform.Translation.Y;
+                structured_data.(frame_id).transform.translation.z(1) = data_struct(i).Transforms(j).Transform.Translation.Z;
+
+                structured_data.(frame_id).transform.rotation.x(1) = data_struct(i).Transforms(j).Transform.Rotation.X;
+                structured_data.(frame_id).transform.rotation.y(1) = data_struct(i).Transforms(j).Transform.Rotation.Y;
+                structured_data.(frame_id).transform.rotation.z(1) = data_struct(i).Transforms(j).Transform.Rotation.Z;
+                structured_data.(frame_id).transform.rotation.w(1) = data_struct(i).Transforms(j).Transform.Rotation.W;
+                
+            end
+            
+
+        end
+       
+end
+
+end
