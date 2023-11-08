@@ -1,7 +1,7 @@
 %% This scripts parses all rosbags from a given folder and stores the data as a ".mat" format.
 
 clear all;
-dir_name = 'Kpx';
+dir_name = 'manual_tuning';
 
 %% load rosbag
 
