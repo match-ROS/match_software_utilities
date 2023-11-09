@@ -16,6 +16,7 @@ failed-to-fetch-binary-armhf-packages-error-
 
 # IPs
 scan for IPs in network: ```sudo nmap -sn 10.145.8.0/24```
+scan for mac-addresses: ```sudo arp-scan -l```
 
 
 | Device  | Static IP |
