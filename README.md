@@ -56,6 +56,7 @@ scan for mac-addresses: ```sudo arp-scan -l```
 | mur620a | 10.145.8.57 |
 | mur620b | 10.145.8.54 |
 | mur620c | 10.145.8.41 |
+| mur620d | 10.145.8.85 |
 | roscore | 10.145.8.50 |
 
 # Mir PC
