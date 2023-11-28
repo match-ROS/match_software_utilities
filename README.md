@@ -53,7 +53,7 @@ scan for mac-addresses: ```sudo arp-scan -l```
 | mir600a_robot_controller | 10.145.8.56 |
 | mir600b_robot_controller | 10.145.8.49 |
 | mir600c_robot_controller | 10.145.8.48 |
-| mur620a | 10.145.8.57 |
+| mur620a | 10.145.8.60 |
 | mur620b | 10.145.8.54 |
 | mur620c | 10.145.8.41 |
 | mur620d | 10.145.8.85 |
