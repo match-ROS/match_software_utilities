@@ -160,7 +160,123 @@
       profile = default
       uuid = b4fbe76c-e4c1-4bc7-959f-48a3f048b390
     [[[terminal4]]]
+      command = echo 'rviz'; bash
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      uuid = bb3fe4a9-9293-4bd2-af94-6089fd71a0be
+    [[[child5]]]
+      type = HPaned
+      parent = child1
+      order = 1
+      position = 364
+      ratio = 0.4993141289437586
+    [[[terminal6]]]
+      command = ""
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = default
+      uuid = b109d31c-7caa-4c01-92f4-088550476737
+    [[[terminal7]]]
+      command = ""  #cd catkin_ws_recker/ && ./sync_D.sh ; bash
+      type = Terminal
+      parent = child5
+      order = 1
+      profile = default
+      uuid = 9e3ff4a7-bd39-462b-87b3-b1e2e440c180
+  [[MuR620b]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 2468:121
+      maximised = False
+      fullscreen = False
+      size = 734, 451
+      title = rosmatch@rosmaster2: ~
+      last_active_term = bb3fe4a9-9293-4bd2-af94-6089fd71a0be
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 223
+      ratio = 0.5
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 367
+      ratio = 0.5034293552812071
+    [[[terminal3]]]
+      command = ssh MuR620b
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = b4fbe76c-e4c1-4bc7-959f-48a3f048b390
+    [[[terminal4]]]
+      command = ssh MuR620b
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      uuid = bb3fe4a9-9293-4bd2-af94-6089fd71a0be
+    [[[child5]]]
+      type = HPaned
+      parent = child1
+      order = 1
+      position = 364
+      ratio = 0.4993141289437586
+    [[[terminal6]]]
+      command = ssh MuR620b
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = default
+      uuid = b109d31c-7caa-4c01-92f4-088550476737
+    [[[terminal7]]]
+      command = ssh MuR620b
+      type = Terminal
+      parent = child5
+      order = 1
+      profile = default
+      uuid = 9e3ff4a7-bd39-462b-87b3-b1e2e440c180
+  [[Sync]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 2468:121
+      maximised = False
+      fullscreen = False
+      size = 734, 451
+      title = rosmatch@rosmaster2: ~
+      last_active_term = bb3fe4a9-9293-4bd2-af94-6089fd71a0be
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 223
+      ratio = 0.5
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 367
+      ratio = 0.5034293552812071
+    [[[terminal3]]]
       command = cd catkin_ws_recker/ && ./sync_A.sh ; bash
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = b4fbe76c-e4c1-4bc7-959f-48a3f048b390
+    [[[terminal4]]]
+      command = cd catkin_ws_recker/ && ./sync_B.sh ; bash
       type = Terminal
       parent = child2
       order = 1
@@ -186,62 +302,88 @@
       order = 1
       profile = default
       uuid = 9e3ff4a7-bd39-462b-87b3-b1e2e440c180
-  [[MuR620d]]
+  [[MuR620d_new]]
     [[[child0]]]
       type = Window
       parent = ""
       order = 0
-      position = 2468:121
-      maximised = False
+      position = 5120:0
+      maximised = True
       fullscreen = False
-      size = 734, 451
-      title = rosmatch@rosmaster2: ~
-      last_active_term = bb3fe4a9-9293-4bd2-af94-6089fd71a0be
+      size = 2560, 1403
+      title = rosmatch@masterOfRos2: ~
+      last_active_term = 9ad1bddc-e2d9-4e04-86a6-915c783fc051
       last_active_window = True
     [[[child1]]]
       type = VPaned
       parent = child0
       order = 0
-      position = 223
-      ratio = 0.5
+      position = 896
+      ratio = 0.6409155937052933
     [[[child2]]]
-      type = HPaned
+      type = VPaned
       parent = child1
       order = 0
-      position = 367
-      ratio = 0.5034293552812071
-    [[[terminal3]]]
-      command = ssh MuR620d
-      type = Terminal
+      position = 439
+      ratio = 0.49270482603815935
+    [[[child3]]]
+      type = HPaned
       parent = child2
       order = 0
-      profile = default
-      uuid = b4fbe76c-e4c1-4bc7-959f-48a3f048b390
+      position = 1278
+      ratio = 0.5001956947162427
     [[[terminal4]]]
-      command = ssh MuR620d
+    command = ssh MuR620d
       type = Terminal
-      parent = child2
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 9ad1bddc-e2d9-4e04-86a6-915c783fc051
+    [[[terminal5]]]
+    command = ssh MuR620d
+      type = Terminal
+      parent = child3
       order = 1
       profile = default
-      uuid = bb3fe4a9-9293-4bd2-af94-6089fd71a0be
-    [[[child5]]]
+      uuid = cc8d0fa0-15aa-4f72-837d-33fa6e3b50b6
+    [[[child6]]]
+      type = HPaned
+      parent = child2
+      order = 1
+      position = 1280
+      ratio = 0.5009784735812133
+    [[[terminal7]]]
+    command = ssh MuR620d
+      type = Terminal
+      parent = child6
+      order = 0
+      profile = default
+      uuid = 30785f8f-32cc-497d-9904-1b4c3a328f58
+    [[[terminal8]]]
+    command = ssh MuR620d
+      type = Terminal
+      parent = child6
+      order = 1
+      profile = default
+      uuid = 95c2ca25-7631-448b-80ac-a7094d948d93
+    [[[child9]]]
       type = HPaned
       parent = child1
       order = 1
-      position = 364
-      ratio = 0.4993141289437586
-    [[[terminal6]]]
-      command = ssh MuR620d
+      position = 1278
+      ratio = 0.5001956947162427
+    [[[terminal10]]]
+    command = ssh MuR620d
       type = Terminal
-      parent = child5
+      parent = child9
       order = 0
       profile = default
-      uuid = b109d31c-7caa-4c01-92f4-088550476737
-    [[[terminal7]]]
-      command = ssh MuR620d
+      uuid = 3e596aa0-b6d7-40f4-8982-35664b54b9f2
+    [[[terminal11]]]
+    command = ssh MuR620d
       type = Terminal
-      parent = child5
+      parent = child9
       order = 1
       profile = default
-      uuid = 9e3ff4a7-bd39-462b-87b3-b1e2e440c180
+      uuid = 0857dc60-ebad-4ac0-89c8-d4527ba7d195
 [plugins]
