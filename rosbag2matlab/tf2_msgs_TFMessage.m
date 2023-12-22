@@ -47,11 +47,15 @@ for i = 1:length(data_struct)
 
         end
         
-        structured_data.(frame_id).transform.rotation.eulXYZ = [unwrap(structured_data.(frame_id).transform.rotation.eulX); ...
-        unwrap(structured_data.(frame_id).transform.rotation.eulY); unwrap(structured_data.(frame_id).transform.rotation.eulZ)];
+       
        
 end
 
+frame_names = fieldnames(structured_data);
+for i = 1:length(frame_names)
+    frame_id = frame_names{i};
+    structured_data.(frame_id).transform.rotation.eulXYZ = [unwrap(structured_data.(frame_id).transform.rotation.eulX); ...
+        unwrap(structured_data.(frame_id).transform.rotation.eulY); unwrap(structured_data.(frame_id).transform.rotation.eulZ)];
 
 
 end
