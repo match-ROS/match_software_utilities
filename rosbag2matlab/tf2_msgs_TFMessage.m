@@ -27,6 +27,8 @@ for i = 1:length(data_struct)
                 structured_data.(frame_id).transform.rotation.eulY(end +1) = eulZYX(2);
                 structured_data.(frame_id).transform.rotation.eulZ(end +1) = eulZYX(3);
                 
+                structured_data.(frame_id).transform.timestamp(end +1) = data_struct(i).Transforms(j).Header.Stamp.Sec + data_struct(i).Transforms(j).Header.Stamp.Nsec * 10^-9;
+                
             else
                 structured_data.(frame_id).transform.translation.x(1) = data_struct(i).Transforms(j).Transform.Translation.X;
                 structured_data.(frame_id).transform.translation.y(1) = data_struct(i).Transforms(j).Transform.Translation.Y;
@@ -41,6 +43,8 @@ for i = 1:length(data_struct)
                 structured_data.(frame_id).transform.rotation.eulX(1) = eulZYX(1);
                 structured_data.(frame_id).transform.rotation.eulY(1) = eulZYX(2);
                 structured_data.(frame_id).transform.rotation.eulZ(1) = eulZYX(3);
+                
+                structured_data.(frame_id).transform.timestamp(1) = data_struct(i).Transforms(j).Header.Stamp.Sec + data_struct(i).Transforms(j).Header.Stamp.Nsec * 10^-9;
                 
             end
             
