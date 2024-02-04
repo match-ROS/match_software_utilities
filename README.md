@@ -12,6 +12,9 @@ export ROSCONSOLE_FORMAT='[${severity}] [${time}] [${node}] [${logger}]: ${messa
 failed-to-fetch-binary-armhf-packages-error-
 ```sudo dpkg --remove-architecture armhf```
 
+"Package dependencies cannot be resolved" error when installing software"
+https://askubuntu.com/questions/101822/package-dependencies-cannot-be-resolved-error-when-installing-software
+
 
 
 # IPs
