@@ -333,14 +333,14 @@
       position = 1278
       ratio = 0.5001956947162427
     [[[terminal4]]]
-    command = ssh MuR620d
+      command = ssh MuR620d
       type = Terminal
       parent = child3
       order = 0
       profile = default
       uuid = 9ad1bddc-e2d9-4e04-86a6-915c783fc051
     [[[terminal5]]]
-    command = ssh MuR620d
+      command = ssh MuR620d
       type = Terminal
       parent = child3
       order = 1
@@ -353,14 +353,14 @@
       position = 1280
       ratio = 0.5009784735812133
     [[[terminal7]]]
-    command = ssh MuR620d
+      command = ssh MuR620d
       type = Terminal
       parent = child6
       order = 0
       profile = default
       uuid = 30785f8f-32cc-497d-9904-1b4c3a328f58
     [[[terminal8]]]
-    command = ssh MuR620d
+      command = ssh MuR620d
       type = Terminal
       parent = child6
       order = 1
@@ -373,17 +373,231 @@
       position = 1278
       ratio = 0.5001956947162427
     [[[terminal10]]]
-    command = ssh MuR620d
+      command = ssh MuR620d
       type = Terminal
       parent = child9
       order = 0
       profile = default
       uuid = 3e596aa0-b6d7-40f4-8982-35664b54b9f2
     [[[terminal11]]]
-    command = ssh MuR620d
+      command = ssh MuR620d
       type = Terminal
       parent = child9
       order = 1
       profile = default
       uuid = 0857dc60-ebad-4ac0-89c8-d4527ba7d195
+  [[MRS]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 2560:0
+      maximised = True
+      fullscreen = False
+      size = 2560, 1403
+      title = rosmatch@masterOfRos2: ~
+      last_active_term = d0a83ade-ae4e-47a1-98fd-b5c280faa210
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 696
+      ratio = 0.4978540772532189
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 1278
+      ratio = 0.5001956947162427
+    [[[child3]]]
+      type = VPaned
+      parent = child2
+      order = 0
+      position = 346
+      ratio = 0.5007235890014472
+    [[[child4]]]
+      type = HPaned
+      parent = child3
+      order = 0
+      position = 636
+      ratio = 0.4996072270227808
+    [[[terminal5]]]
+      command = ssh mur620a
+      type = Terminal
+      parent = child4
+      order = 0
+      profile = default
+      uuid = 315672cd-c61d-4588-8cf1-ab01b1e484d4
+    [[[terminal6]]]
+      command = ssh mur620a
+      type = Terminal
+      parent = child4
+      order = 1
+      profile = default
+      uuid = ba1d770e-7328-4d59-a868-f35d6366e1e1
+    [[[child7]]]
+      type = HPaned
+      parent = child3
+      order = 1
+      position = 636
+      ratio = 0.4996072270227808
+    [[[terminal8]]]
+      command = ssh mur620a
+      type = Terminal
+      parent = child7
+      order = 0
+      profile = default
+      uuid = d757c0bf-2c16-4475-bfa0-3ece5fdf1803
+    [[[terminal9]]]
+      command = ssh mur620a
+      type = Terminal
+      parent = child7
+      order = 1
+      profile = default
+      uuid = d0a83ade-ae4e-47a1-98fd-b5c280faa210
+    [[[child10]]]
+      type = HPaned
+      parent = child2
+      order = 1
+      position = 638
+      ratio = 0.5
+    [[[child11]]]
+      type = VPaned
+      parent = child10
+      order = 0
+      position = 346
+      ratio = 0.5007235890014472
+    [[[terminal12]]]
+      command = ssh mur620b
+      type = Terminal
+      parent = child11
+      order = 0
+      profile = default
+      uuid = 838b2717-5cd3-4fd1-8f2d-101d373550aa
+    [[[terminal13]]]
+      command = ssh mur620b
+      type = Terminal
+      parent = child11
+      order = 1
+      profile = default
+      uuid = e6e726eb-5503-4584-b762-9bba80b29842
+    [[[child14]]]
+      type = VPaned
+      parent = child10
+      order = 1
+      position = 346
+      ratio = 0.5007235890014472
+    [[[terminal15]]]
+      command = ssh mur620b
+      type = Terminal
+      parent = child14
+      order = 0
+      profile = default
+      uuid = 42d53db3-1bdf-4638-a665-0b0bebc076d2
+    [[[terminal16]]]
+      command = ssh mur620b
+      type = Terminal
+      parent = child14
+      order = 1
+      profile = default
+      uuid = 81b28111-e69d-4115-8612-ca8656c6ce7a
+    [[[child17]]]
+      type = HPaned
+      parent = child1
+      order = 1
+      position = 1278
+      ratio = 0.5001956947162427
+    [[[child18]]]
+      type = VPaned
+      parent = child17
+      order = 0
+      position = 350
+      ratio = 0.4992867332382311
+    [[[child19]]]
+      type = HPaned
+      parent = child18
+      order = 0
+      position = 636
+      ratio = 0.4996072270227808
+    [[[terminal20]]]
+      command = ssh mur620c
+      type = Terminal
+      parent = child19
+      order = 0
+      profile = default
+      uuid = 06ad807c-5151-4798-8cf1-4089640d8dc1
+    [[[terminal21]]]
+      command = ssh mur620c
+      type = Terminal
+      parent = child19
+      order = 1
+      profile = default
+      uuid = 1990ce80-e79e-402b-b9a3-8006f9e5e24f
+    [[[child22]]]
+      type = HPaned
+      parent = child18
+      order = 1
+      position = 636
+      ratio = 0.4996072270227808
+    [[[terminal23]]]
+      command = ssh mur620c
+      type = Terminal
+      parent = child22
+      order = 0
+      profile = default
+      uuid = 1e677faa-7aea-4653-bc51-3800d2a006e6
+    [[[terminal24]]]
+      command = ssh mur620c
+      type = Terminal
+      parent = child22
+      order = 1
+      profile = default
+      uuid = 469b47c2-dc29-4f13-958a-3e328a6da6fc
+    [[[child25]]]
+      type = HPaned
+      parent = child17
+      order = 1
+      position = 638
+      ratio = 0.5
+    [[[child26]]]
+      type = VPaned
+      parent = child25
+      order = 0
+      position = 350
+      ratio = 0.4992867332382311
+    [[[terminal27]]]
+      command = ssh mur620d
+      type = Terminal
+      parent = child26
+      order = 0
+      profile = default
+      uuid = 2b73db01-025f-4d75-bc3e-395bb9f89de6
+    [[[terminal28]]]
+      command = ssh mur620d
+      type = Terminal
+      parent = child26
+      order = 1
+      profile = default
+      uuid = a5136d72-98b4-49cf-8c18-793f6f3f5403
+    [[[child29]]]
+      type = VPaned
+      parent = child25
+      order = 1
+      position = 350
+      ratio = 0.4992867332382311
+    [[[terminal30]]]
+      command = ssh mur620d
+      type = Terminal
+      parent = child29
+      order = 0
+      profile = default
+      uuid = d095740c-0e49-4a44-8bd2-d8b853952923
+    [[[terminal31]]]
+      command = ssh mur620d
+      type = Terminal
+      parent = child29
+      order = 1
+      profile = default
+      uuid = d708e041-dfc0-4ec8-8e1d-9f5f29a49fd8
 [plugins]
