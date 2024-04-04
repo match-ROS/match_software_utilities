@@ -29,6 +29,10 @@ function data_cell_structured = checkDataType(data)
             data_cell_structured = tf2_msgs_TFMessage(data);
         end 
         
+        if data_type == "geometry_msgs/WrenchStamped" 
+            data_cell_structured = wrench_stamped(data);
+        end
+        
     end
 end
 
