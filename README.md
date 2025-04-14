@@ -53,9 +53,10 @@ scan for mac-addresses: ```sudo arp-scan -l```
 | mir600a_AirLan_transmitter | 10.145.8.59 |
 | mir600b_AirLan_transmitter | 10.145.8.46 |
 | mir600b_AirLan_receiver | 10.145.8.47 |
-| mir600a_robot_controller | 10.145.8.56 |
+| mir600a_robot_controller | 10.145.8.61 |
 | mir600b_robot_controller | 10.145.8.49 |
 | mir600c_robot_controller | 10.145.8.48 |
+| mir600d_robot_controller | 10.145.8.44 |
 | mur620a | 10.145.8.60 |
 | mur620b | 10.145.8.54 |
 | mur620c | 10.145.8.41 |
