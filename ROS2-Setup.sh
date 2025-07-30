@@ -1,5 +1,5 @@
 #!/bin/sh
-# update & upgrade #
+
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
@@ -27,9 +27,16 @@ sudo apt install software-properties-common
 sudo add-apt-repository universe
 
 sudo apt update && sudo apt install curl -y
-sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+export ROS_APT_SOURCE_VERSION=$(curl -s https://api.github.com/repos/ros-infrastructure/ros-apt-source/releases/latest | grep -F "tag_name" | awk -F\" '{print $4}')
+curl -L -o /tmp/ros2-apt-source.deb "https://github.com/ros-infrastructure/ros-apt-source/releases/download/${ROS_APT_SOURCE_VERSION}/ros2-apt-source_${ROS_APT_SOURCE_VERSION}.$(. /etc/os-release && echo $VERSION_CODENAME)_all.deb" # If using Ubuntu derivates use $UBUNTU_CODENAME
+sudo dpkg -i /tmp/ros2-apt-source.deb
 
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+sudo apt update
+
+
+# sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+
+# echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 sudo apt update && sudo apt install -y \
   python3-flake8-blind-except \
@@ -46,18 +53,38 @@ sudo apt update && sudo apt install -y \
   python3-pytest-timeout \
   ros-dev-tools
 
+# Create a virtual environment because new policy (adopted since Ubuntu 23.10) protects the base system and forces users to keep their own packages isolated.
+sudo apt install python3-venv
+python3 -m venv ~/venvs/myenv
+echo 'source ~/venvs/myenv/bin/activate' >> ~/.bashrc
+
+sudo apt-get install ros-jazzy-desktop -y
+sudo apt upgrade -y
+
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+echo "export ROS_DISTRO=jazzy" >> ~/.bashrc
+echo "export ROS_PYTHON_VERSION=3" >> ~/.bashrc
+
+sudo apt install ros-jazzy-gz-ros2-control -y
+sudo apt install ros-jazzy-ros2-control -y
+sudo apt install ros-jazzy-ros2-controllers -y
+sudo apt install ros-jazzy-moveit-py -y
+sudo apt install ros-jazzy-srdfdom -y
+
+echo 'source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash' >> ~/.bashrc
+echo 'source /usr/share/colcon_cd/function/colcon_cd.sh' >> ~/.bashrc
 
 mkdir -p ~/ros2_jazzy/src
+cd ~/ros2_jazzy/src
+git clone https://github.com/match-ROS/match_mobile_robotics_jazzy.git
+cd match_mobile_robotics_jazzy
+git submodule update --init --recursive
 cd ~/ros2_jazzy
-vcs import --input https://raw.githubusercontent.com/ros2/ros2/jazzy/ros2.repos src
-
-sudo apt upgrade
 
 sudo rosdep init
 rosdep update
-rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-6.0.1 urdfdom_headers"
+rosdep install --from-paths src --ignore-src -y
 
-cd ~/ros2_jazzy/
 colcon build --symlink-install
 
 echo "source ~/ros2_jazzy/install/setup.bash" >> ~/.bashrc
