@@ -23,9 +23,18 @@ echo "# deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/ros-o
 
 # Install and setup rosdep
 # Do not install python3-rosdep2, which is an outdated version of rosdep shipped via the Ubuntu repositories (instead of ROS)!
-sudo apt update
-sudo apt install python3-rosdep
+sudo apt update -y
+sudo apt install python3-rosdep -y
 sudo rosdep init
+
+# install catkin tools for catkin build
+sudo sh \
+    -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" \
+        > /etc/apt/sources.list.d/ros-latest.list'
+wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+sudo apt-get update -y
+sudo apt-get install python3-catkin-tools -y
+
 
 # Define custom rosdep package mapping
 echo "yaml https://ros.packages.techfak.net/ros-one.yaml one" | sudo tee /etc/ros/rosdep/sources.list.d/1-ros-one.list
